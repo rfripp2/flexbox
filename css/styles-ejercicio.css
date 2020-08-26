@@ -1,0 +1,93 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header, section, footer {
+  padding: 20px 0;
+  border-bottom: 1px solid blueviolet;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.clean-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.clean-list li {
+  display: inline-block;
+}
+
+.flex-hijos {
+  width: calc((100% / 2) - 15px);
+  background: darkblue;
+  height: 300px;
+  margin-bottom: 30px;
+  color: white;
+}
+/* ESTILOS Flexbox */
+/* usemos nuestra clase flex-container para dar estilos generales flex */
+
+/*
+Acomodar el header
+1- los elementos tienen que estar justificados
+2- los elementos tienen que estar centrados verticalmente
+*/
+
+
+/*
+Acomodar la sección 1.
+1- los elementos tienen que estar uno abajo del otro.
+2- no miden el 100% del contenedor.
+3- estan alineados a la izquierda.
+*/
+
+
+
+/*
+Acomodar la sección 2
+1- tiene que haber dos elementos por fila
+2- los elementos que contengan tienen que estar centrados horizontal y verticalmente
+*/
+
+
+/*
+Acomodar la sección 3
+1- deben ser 2 columnas
+2- debe haber un espaco entre ellas.
+*/
+
+
+/*
+Sección 3
+La imagen de esta sección debe estar posicionada en relación a su contenedor
+unos 60px desde arriba.
+*/
+
+
+/*
+Acomodar el footer
+1- deben ser dos columnas
+2- alineadas a la izquierda y a la derecha respectivamente
+3- los elementos tienen que estar alineados verticalmente en el centro
+*/
+

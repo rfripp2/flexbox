@@ -1,0 +1,68 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.flex-hijos {
+  background: lightcoral;
+  color: white;
+  border-radius: 5px;
+  padding: 1%;
+  margin: 1%;
+}
+
+/* ACA EMPIEZA FLEXBOX */
+
+.flex-container  {
+  background: blueviolet;
+  display: flex;
+
+  /* flex direction, por defecto es row (fila) */
+  /* flex-direction: row; */
+  /* flex-direction: column; */
+  /* flex-direction: row-reverse; */
+  /* flex-direction: column-reverse; */
+}
+
+/* si los hijos tuvieran un tamaño que excede el ancho del flex-container podemos obligarlos
+a que bajen de renglón, para ajustarlos al ancho del contenedor */
+
+.flex-container {
+  /* flex-wrap el valor por defecto es nowrap */
+  /* flex-wrap: nowrap; */
+  /* flex-wrap: wrap; */
+}
+
+/* Podemos acomodar los hijos de acuerdo a la main y cross axis */
+/* Por defecto los elementos tienen un justify-content de flex-start */
+
+.flex-container.justify {
+  justify-content: flex-start;
+  /* justify-content: flex-end; */
+  /* justify-content: center; */
+  /* justify-content: space-around; */
+  /* justify-content: space-between; */
+  /* justify-content: space-evenly; */
+}
+
+
+/* aliniamiento vertical (entre nosotros: por fin!!) */
+/* Por defecto viene en valor stretch */
+
+.flex-container.align {
+  align-items: stretch;
+  /* align-items: flex-start; */
+  /* align-items: flex-end; */
+  /* align-items: center; */
+  /* align-items: baseline; */
+}
+
