@@ -38,21 +38,32 @@ img {
 }
 
 .flex-hijos {
-  width: calc((100% / 2) - 15px);
+  width: 100%;
   background: darkblue;
   height: 300px;
   margin-bottom: 30px;
   color: white;
 }
+
+@media screen and (min-width: 768px) {
+  .flex-hijos {
+    width: calc((100% / 2) - 15px);
+  }
+}
 /* ESTILOS Flexbox */
 /* usemos nuestra clase flex-container para dar estilos generales flex */
-
+.flex-container {
+  display: flex;
+}
 /*
 Acomodar el header
 1- los elementos tienen que estar justificados
 2- los elementos tienen que estar centrados verticalmente
 */
-
+header .flex-container {
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*
 Acomodar la sección 1.
@@ -60,7 +71,10 @@ Acomodar la sección 1.
 2- no miden el 100% del contenedor.
 3- estan alineados a la izquierda.
 */
-
+#section-1 .flex-container {
+  flex-direction: column;
+  padding-right: 30%;
+}
 
 
 /*
@@ -68,7 +82,17 @@ Acomodar la sección 2
 1- tiene que haber dos elementos por fila
 2- los elementos que contengan tienen que estar centrados horizontal y verticalmente
 */
+#section-2 .flex-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+#section-2 .flex-hijos {
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  align-items: center;
+}
 
 /*
 Acomodar la sección 3
