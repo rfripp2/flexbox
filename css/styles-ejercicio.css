@@ -53,18 +53,13 @@ img {
 }
 /* ESTILOS Flexbox */
 /* usemos nuestra clase flex-container para dar estilos generales flex */
-.flex-container {
-  display: flex;
-}
+
 /*
 Acomodar el header
 1- los elementos tienen que estar justificados
 2- los elementos tienen que estar centrados verticalmente
 */
-header .flex-container {
-  justify-content: space-between;
-  align-items: center;
-}
+
 
 /*
 Acomodar la sección 1.
@@ -72,10 +67,6 @@ Acomodar la sección 1.
 2- no miden el 100% del contenedor.
 3- estan alineados a la izquierda.
 */
-#section-1 .flex-container {
-  flex-direction: column;
-  padding-right: 30%;
-}
 
 
 /*
@@ -83,17 +74,7 @@ Acomodar la sección 2
 1- tiene que haber dos elementos por fila
 2- los elementos que contengan tienen que estar centrados horizontal y verticalmente
 */
-#section-2 .flex-container {
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 
-#section-2 .flex-hijos {
-  display: flex;
-  justify-content: center;
-  /* text-align: center; */
-  align-items: center;
-}
 
 /*
 Acomodar la sección 3
@@ -101,26 +82,12 @@ Acomodar la sección 3
 2- debe haber un espaco entre ellas.
 */
 
-#section-3 .flex-container {
-  justify-content: space-between;
-}
-#section-3 .flex-container div {
-  width: calc((100% / 2) - 15px);
-}
 /*
 Sección 3
 La imagen de esta sección debe estar posicionada en relación a su contenedor
 unos 60px desde arriba.
 */
-.image-container {
-  position: relative;
-  min-height: 450px;
-}
-.image-container img {
-  position: absolute;
-  top: -60px;
-  left: 0;
-}
+
 
 /*
 Acomodar el footer
@@ -129,14 +96,3 @@ Acomodar el footer
 3- los elementos tienen que estar alineados verticalmente en el centro
 */
 
-footer .flex-container {
-  justify-content: space-between;
-  align-items: center
-}
-
-footer .flex-container div {
-  width: calc((100% / 2) - 15px);
-}
-.redes {
-  text-align: right;
-}

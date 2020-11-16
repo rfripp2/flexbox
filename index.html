@@ -3,60 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Flexbox -1 </title>
-  <link rel="stylesheet" href="css/styles.css">
+  <title>Creando la grilla con flexbox</title>
+  <link rel="stylesheet" href="css/styles-ejercicio.css">
 </head>
 <body>
-  <div class="container">
-    <!-- <div class="flex-container">
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4</div>
-      <div class="flex-hijos">5</div>
-      <div class="flex-hijos">6</div>
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4</div>
-      <div class="flex-hijos">5</div>
-      <div class="flex-hijos">6</div>
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4</div>
-      <div class="flex-hijos">5</div>
-      <div class="flex-hijos">6</div>
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4</div>
-      <div class="flex-hijos">5</div>
-      <div class="flex-hijos">6</div>
+  <header>
+    <div class="container flex-container">
+      <div class="logo-container">
+        <img src="https://placekitten.com/50/50" alt="logo">
+      </div>
+      <div class="navigation-container">
+        <nav>
+          <ul class="navigation clean-list">
+            <li><a href="#section-1">Sección 1</a></li>
+            <li><a href="#section-2">Sección 2</a></li>
+            <li><a href="#section-3">Sección 3</a></li>
+          </ul>
+        </nav>
+      </div>
     </div>
-    <div class="flex-container">
-      <div class="flex-hijos grandes">1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, nisi in quia odio totam iusto alias cupiditate. Suscipit, officiis ut deserunt laboriosam sit laudantium sequi quaerat libero? Voluptatibus, officiis deleniti.</div>
-      <div class="flex-hijos grandes">2 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nostrum minus ratione excepturi consectetur et commodi corrupti earum ipsa debitis voluptates praesentium, suscipit numquam voluptatem impedit porro ea? Ducimus, quasi quisquam?</div>
-      <div class="flex-hijos grandes">3 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vitae eius sed, officiis repellendus obcaecati nobis exercitationem qui? Expedita voluptatibus saepe, molestiae optio, quam minus quia natus maiores, quo molestias velit.</div>
-      <div class="flex-hijos grandes">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi inventore sint repellendus adipisci quibusdam qui aspernatur! Suscipit totam minus laboriosam. Voluptatem, autem. Aliquam mollitia in officiis voluptates quaerat exercitationem deleniti.</div>
-      <div class="flex-hijos grandes">5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit ipsa maiores sed, rem unde soluta, architecto excepturi ut porro accusantium, beatae esse. Eligendi laudantium optio veniam voluptatem illo porro numquam!</div>
-      <div class="flex-hijos grandes">6 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, mollitia eum. Distinctio exercitationem sit beatae placeat aliquid quas quos corporis enim, eaque deleniti dolorum accusantium, fugit facilis, modi itaque dolorem!</div>
+  </header>
+  <main>
+    <section id="section-1" class="section">
+      <div class="container flex-container">
+        <h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita commodi, provident incidunt ullam sint sed vero? Quas amet doloribus cupiditate vel, voluptate quae nulla. Mollitia vel error minima animi quibusdam.</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ipsa laboriosam voluptatem reiciendis, quaerat itaque odio praesentium obcaecati repellendus illum quo eligendi nisi? Ipsum libero, ratione ea officia eligendi vero.</p>
+        <a href="#">link</a>
+      </div>
+    </section>
+    <section id="section-2" class="section">
+      <div class="container">
+        <h2>titulo</h2>
+        <div class="flex-container">
+          <div class="flex-hijos">
+            <p>1</p>
+          </div>
+          <div class="flex-hijos">2</div>
+          <div class="flex-hijos">3</div>
+          <div class="flex-hijos">4</div>
+        </div>
+      </div>
+    </section>
+    <section id="section-3" class="section">
+      <div class="flex-container container">
+        <div class="image-container">
+          <img src="https://placekitten.com/600/500" alt="mi gatito">
+        </div>
+        <div class="text-container">
+          <h3>titulo</h3>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, fugiat sit quisquam ipsam obcaecati earum ex sint amet minus accusamus? Nihil reprehenderit laboriosam delectus eius praesentium voluptatem? Tempore, iste dolorum?</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="flex-container container">
+      <div class="legales">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque expedita repellendus et, libero tempore beatae nobis aliquam porro, impedit, perferendis officia quaerat dolorem. Nesciunt pariatur deserunt qui. Expedita, doloribus deleniti!</p>
+      </div>
+      <div class="redes">
+        <ul class="clean-list">
+          <li><a href="#">F</a></li>
+          <li><a href="#">I</a></li>
+          <li><a href="#">T</a></li>
+          <li><a href="#">D</a></li>
+          <li><a href="#">H</a></li>
+        </ul>
+      </div>
     </div>
-
-    <div class="flex-container justify">
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4</div>
-    </div> -->
-
-    <div class="flex-container align">
-      <div class="flex-hijos">1</div>
-      <div class="flex-hijos">2 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quaerat quam explicabo autem esse tempore aliquid perferendis expedita. Vel fuga recusandae reprehenderit totam quos inventore earum voluptatem fugit sit quam?</div>
-      <div class="flex-hijos">3</div>
-      <div class="flex-hijos">4 Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi eligendi perspiciatis labore sint voluptatem est, sed earum consequuntur? </div>
-      <div class="flex-hijos">5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit rerum blanditiis sit fugit, totam.</div>
-    </div>
-  </div>
+  </footer>
 </body>
 </html>
